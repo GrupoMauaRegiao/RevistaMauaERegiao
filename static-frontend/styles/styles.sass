@@ -27,7 +27,7 @@
     float: left
 
     .espaco
-      width: 560px
+      width: 630px
       height: 45px
       float: left
 
@@ -99,7 +99,7 @@
           border-bottom: 2px solid $cinzaTexto
 
         .link-todas-edicoes
-          margin: 40px 0 0 95px
+          margin: 40px 0 0 157px
           float: left
 
           a
@@ -134,14 +134,15 @@
               margin: 0 25px 0 0
               display: inline-block
 
+            li:last-child
+              margin-right: 0
+
 .banner
   width: 100%
-  background: $laranja
   float: left
 
   .conteudos
     width: 960px
-    height: 225px
     margin: 0 auto
 
     .texto
@@ -157,8 +158,28 @@
           font-weight: bold
 
 .pagina-home
+  background: $laranja
+
   .conteudos
+    height: 225px
     background: url('../imagens/banners/banner-home.jpg') no-repeat -35px 0
+
+.pagina-sobre-nos,
+.pagina-anuncie
+  .conteudos
+    height: 355px
+
+.pagina-sobre-nos
+  background: $azulFlorescente
+
+  .conteudos
+    background: url('../imagens/banners/banner-sobre-nos.jpg') no-repeat -40px 0
+
+.pagina-anuncie
+  background: $verdeFlorescente
+
+  .conteudos
+    background: url('../imagens/banners/banner-anuncie.jpg') no-repeat 215px 0
 
 .rodape
   width: 100%
