@@ -5,8 +5,8 @@
     <meta name="keywords" content="revista maua, maua, sp, maua e regiao, grupo maua e regiao, empresas de mauá, ribeirão pires, revista maua, jornal maua, comprar em maua, comprar em rio grande da serra, comprar em ribeirão pires">
     <meta name="description" content="A Revista Mauá e região é um dos nomes mais fortes e respeitados da região. Isso se deve ao trabalho nela investido. Abordando assuntos sérios e de interesse da população de onde ela é entregue, com o objetivo de ser mais que uma revista de fofoca ou que apenas julga, a Revista Mauá e Região busca junto as pessoas soluções para seu município, e vai direto as autoridades buscar resultados.">
     <meta name="author" content='Grupo Mauá e Região de Comunicação'>
-    <link rel="shortcut icon" href="imagens/favicon.ico" />
-    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/imagens/favicon.ico" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/styles.min.css">
     <title>Revista Mauá e Região</title>
   </head>
   <body>

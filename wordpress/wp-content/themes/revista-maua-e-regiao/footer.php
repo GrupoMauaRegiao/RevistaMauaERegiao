@@ -36,6 +36,6 @@
     <!-- # Layout -->
 
     <?php wp_footer(); ?>
-    <script src="scripts/scripts.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/scripts/scripts.js"></script>
   </body>
 </html>
