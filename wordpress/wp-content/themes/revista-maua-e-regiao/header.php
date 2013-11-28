@@ -17,17 +17,17 @@
             <div class="espaco"></div>
             <div class="gabaritos">
               <ul>
-                <li><a href="#gabaritos">Gabaritos</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/gabaritos">Gabaritos</a></li>
               </ul>
             </div>
             <div class="redes-sociais">
-              <a href="#youtube" title="Youtube">
+              <a target="_blank" href="http://www.youtube.com/revistamaua" title="Youtube">
                 <div class="icone"></div>
               </a>
-              <a href="#twitter" title="Twitter">
+              <a target="_blank" href="https://twitter.com/tvmauaeregiao" title="Twitter">
                 <div class="icone"></div>
               </a>
-              <a href="#facebook" title="Facebook">
+              <a target="_blank" href="https://www.facebook.com/revistamaua" title="Facebook">
                 <div class="icone"></div>
               </a>
             </div>
@@ -35,14 +35,14 @@
         </div>
         <div class="navegacao">
           <div class="conteudos">
-            <a href="#logotipo" title="Revista Mauá e Região">
+            <a href="<?php bloginfo('url'); ?>" title="Revista Mauá e Região">
               <div class="logotipo"></div>
             </a>
 
             <div class="menu">
               <div class="link-todas-edicoes">
                 <ul>
-                  <li><a href="#todas-as-edicoes">Todas as edições</a></li>
+                  <li><a href="<?php bloginfo('url'); ?>/todas-as-edicoes">Todas as edições</a></li>
                 </ul>
               </div>
               <div class="busca">
@@ -53,9 +53,9 @@
               </div>
               <div class="links">
                 <ul>
-                  <li><a href="#sobre-nos">Sobre nós</a></li>
-                  <li><a href="#anuncie">Anuncie</a></li>
-                  <li><a href="#fale-conosco">Fale conosco</a></li>
+                  <li><a href="<?php bloginfo('url'); ?>/sobre-nos">Sobre nós</a></li>
+                  <li><a href="<?php bloginfo('url'); ?>/anuncie">Anuncie</a></li>
+                  <li><a href="<?php bloginfo('url'); ?>/fale-conosco">Fale conosco</a></li>
                 </ul>
               </div>
             </div>
