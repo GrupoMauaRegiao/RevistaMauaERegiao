@@ -7,6 +7,7 @@ O repositório do novo website (nov/2013) da Revista Mauá e Região.
 Para seguir as instruções abaixo você deverá ter o node (npm) instalado.
 
 > Versão estática: RevistaMauaERegiao/static-frontend/
+
 > Versão dinâmica: RevistaMauaERegiao/wordpress/wp-content/themes/revista-maua-e-regiao/
 
 * Instale os node modules:
