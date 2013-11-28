@@ -2,21 +2,7 @@
         <div class="conteudos">
           <div class="menu">
             <ul>
-              <li>
-                <div class="borda-link-menu"></div>
-                <a href="#todas-as-edicoes">Todas as edições</a></li>
-              <li>
-                <div class="borda-link-menu"></div>
-                <a href="#gabaritos">Gabaritos</a></li>
-              <li>
-                <div class="borda-link-menu"></div>
-                <a href="#sobre-nos">Sobre nós</a></li>
-              <li>
-                <div class="borda-link-menu"></div>
-                <a href="#anuncie">Anuncie</a></li>
-              <li>
-                <div class="borda-link-menu"></div>
-                <a href="#fale-conosco">Fale conosco</a></li>
+              <?php echo linksPaginas(); ?>
             </ul>
           </div>
 
