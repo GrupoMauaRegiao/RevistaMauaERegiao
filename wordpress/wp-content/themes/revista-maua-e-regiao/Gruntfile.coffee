@@ -34,8 +34,6 @@ module.exports = (grunt) ->
       dist:
         files:
           'styles/styles.min.css': 'styles/styles.sass'
-          'styles/ie.min.css': 'styles/ie.sass'
-
     watch:
       coffeelint:
         files: ['scripts/scripts.coffee']
@@ -50,7 +48,7 @@ module.exports = (grunt) ->
         tasks: ['jshint', 'min']
 
       sass:
-        files: ['styles/styles.sass', 'styles/ie.sass']
+        files: ['styles/styles.sass']
         tasks: ['sass']
 
   grunt.loadNpmTasks 'grunt-contrib-watch'
