@@ -13,7 +13,9 @@
 <!-- # Banner -->
 
   <?php
-  if (is_page("anuncie")) {
+  if (is_page("todas-as-edicoes")) {
+    include "todas-as-edicoes.php";
+  } elseif (is_page("anuncie")) {
     include "anuncie.php";
   } elseif (is_page("sobre-nos")) {
     include "sobre-nos.php";
