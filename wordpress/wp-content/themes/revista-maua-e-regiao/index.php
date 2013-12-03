@@ -29,20 +29,71 @@
     </div>
 
     <div class="revistas">
-      <div class="revista">
-        <div class="imagem">
-          <img src="" alt="">
-        </div>
-        <div class="informacoes">
-          <div class="numero-edicao">
-            <h5>Edição 46</h5>
+      <a href="#">
+        <div class="revista">
+          <div class="imagem">
+            <img src="http://www.revistamaua.com.br/img/capa_peq.gif" alt="">
           </div>
-          <div class="titulo-edicao">
-            <p>Átila Jacomussi. Novos projetos e nova visão a frente da SAMA</p>
+          <div class="informacoes">
+            <div class="numero-edicao">
+              <h5>Edição 47</h5>
+            </div>
+            <div class="titulo-edicao">
+              <p>Polo Petroquímico: chamas, poluição e doenças. Progresso ou retrocesso?</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+
+      <a href="#">
+        <div class="revista">
+          <div class="imagem">
+            <img src="http://www.revistamaua.com.br/img/capa_big_46.gif" alt="">
+          </div>
+          <div class="informacoes">
+            <div class="numero-edicao">
+              <h5>Edição 46</h5>
+            </div>
+            <div class="titulo-edicao">
+              <p>Átila Jacomussi: novos projetos e a nova visão a frente da SAMA</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="revista">
+          <div class="imagem">
+            <img src="http://www.revistamaua.com.br/img/capa_big_45.gif" alt="">
+          </div>
+          <div class="informacoes">
+            <div class="numero-edicao">
+              <h5>Edição 45</h5>
+            </div>
+            <div class="titulo-edicao">
+              <p>Sonia Braga: um novo olhar para a cidadania</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="revista">
+          <div class="imagem">
+            <img src="http://www.revistamaua.com.br/img/capa_big_44.gif" alt="">
+          </div>
+          <div class="informacoes">
+            <div class="numero-edicao">
+              <h5>Edição 44</h5>
+            </div>
+            <div class="titulo-edicao">
+              <p>Mauá ontem e hoje - Parte final</p>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
+
   </div>
 </div>
 <!-- # Conteúdo -->
