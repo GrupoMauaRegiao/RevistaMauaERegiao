@@ -128,7 +128,8 @@ body
               margin: -4px 30px 0
               border: 0
               outline: 0
-              background: url('../imagens/sprite-icones.png') no-repeat -55px -25px
+              cursor: pointer
+              background: url('../imagens/sprite-icones.png') no-repeat -3px -78px
 
         .links
           margin: 40px 0 0
@@ -211,12 +212,79 @@ body
       height: 450px
       background: $cinzaVitrine
 
-  .secao-relembre
+  .edicoes
+    .area-busca
+      width: 468px
+      height: 420px
+      margin: 0 26px 26px 0
+      background: $laranja
+      box-shadow: 0 -7px 10px $cinzaSombra
+      float: left
+
+      .borda-topo
+        width: 200px
+        height: 70px
+        border-bottom: 2px solid $branco
+        -webkit-transition: width 1s ease-in-out
+        transition: width 1s ease-in-out
+
+      .formulario
+        padding: 30px 40px 40px
+
+        form
+          .mensagem
+            margin: 0 0 20px 0
+
+            label
+              font-size: 28px
+              line-height: 35px
+              color: $branco
+              text-transform: uppercase
+
+          input[type="text"]
+            width: 372px
+            height: 40px
+            border: 2px solid $branco
+            padding: 5px
+            color: $branco
+            font: 20px Gotham
+            background: $laranja
+            -webkit-transition: background 0.3s linear
+            transition: background 0.3s linear
+            float: left
+
+          input[type="text"]:focus
+            background: $laranjaEscuro
+
+          input[type="button"]
+            width: 25px
+            height: 25px
+            background: url("../imagens/sprite-icones.png") no-repeat -55px -25px
+            margin: 15px -40px 0 -40px
+            cursor: pointer
+            border: 0
+            outline: 0
+
+    .lista-edicoes
+      .revistas
+        a:nth-child(2)
+          margin-right: 0
+
+        a:nth-child(4n+2)
+          margin-right: 0
+
+  .edicoes
+    .area-busca:hover
+      .borda-topo
+        width: 350px
+
+  .secao-relembre,
+  .edicoes
     width: 960px
     margin: 0 auto
 
     .cabecalho-secao-relembre
-      margin: 50px 0 20px 0
+      margin: 50px 0 20px
 
       h2
         margin: 0 0 0 -3px
@@ -234,7 +302,7 @@ body
           width: 220px
           height: 420px
           background: $branco
-          box-shadow: 0 -2px 20px $cinzaSombra
+          box-shadow: 0 -7px 10px $cinzaSombra
 
           .imagem
             width: 220px
