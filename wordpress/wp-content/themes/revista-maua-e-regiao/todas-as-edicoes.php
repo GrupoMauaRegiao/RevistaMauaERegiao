@@ -1,5 +1,9 @@
 <div class="conteudo">
-  <div class="edicoes">
+  <div class="edicoes todas-edicoes">
+
+    <div class="cabecalho-edicoes">
+      <h1>Edições</h1>
+    </div>
 
     <div class="area-busca">
       <div class="borda-topo">
