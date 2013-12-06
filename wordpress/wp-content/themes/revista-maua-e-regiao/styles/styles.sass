@@ -10,6 +10,12 @@ body
 .esconder
   display: none
 
+.titulo-pagina-laranja
+  font-size: 15px
+  font-weight: bold
+  color: $laranja
+  text-transform: uppercase
+
 .padronizar-link
   text-decoration: none
   border: 0
@@ -212,145 +218,221 @@ body
       height: 450px
       background: $cinzaVitrine
 
-  .todas-edicoes
-    margin-top: 40px !important
+// ### Home e Todas as edições ###
+.secao-relembre,
+.edicoes
+  width: 960px
+  margin: 0 auto
 
-    .cabecalho-edicoes
-      margin: 0 0 25px 0
+  .cabecalho-secao-relembre
+    margin: 50px 0 20px
 
-      h1
-        font-size: 15px
-        font-weight: bold
-        color: $laranja
-        text-transform: uppercase
+    h2
+      margin: 0 0 0 -3px
+      font-size: 28px
+      text-transform: uppercase
+      color: $cinzaVitrine
 
-    .area-busca
-      width: 468px
-      height: 420px
+  .revistas
+    a
+      @extend .padronizar-link
       margin: 0 26px 26px 0
-      background: $laranja
-      box-shadow: 0 -7px 10px $cinzaSombra
       float: left
 
-      .borda-topo
-        width: 200px
-        height: 70px
-        border-bottom: 2px solid $branco
-        -webkit-transition: width 1s ease-in-out
-        transition: width 1s ease-in-out
+      .revista
+        width: 220px
+        height: 420px
+        background: $branco
+        box-shadow: 0 -7px 10px $cinzaSombra
 
-      .formulario
-        padding: 30px 40px 40px
-
-        form
-          .mensagem
-            margin: 0 0 20px 0
-
-            label
-              font-size: 28px
-              line-height: 35px
-              color: $branco
-              text-transform: uppercase
-
-          input[type="text"]
-            width: 372px
-            height: 40px
-            border: 2px solid $branco
-            padding: 5px
-            color: $branco
-            font: 20px Gotham
-            background: $laranja
-            -webkit-transition: background 0.3s linear
-            transition: background 0.3s linear
-            float: left
-
-          input[type="text"]:focus
-            background: $laranjaEscuro
-
-          input[type="button"]
-            width: 25px
-            height: 25px
-            background: url("../imagens/sprite-icones.png") no-repeat -55px -25px
-            margin: 15px -40px 0 -40px
-            cursor: pointer
-            border: 0
-            outline: 0
-
-    .lista-edicoes
-      .revistas
-        a:nth-child(2)
-          margin-right: 0
-
-        a:nth-child(4n+2)
-          margin-right: 0
-
-  .edicoes
-    .area-busca:hover
-      .borda-topo
-        width: 350px
-
-  .secao-relembre,
-  .edicoes
-    width: 960px
-    margin: 0 auto
-
-    .cabecalho-secao-relembre
-      margin: 50px 0 20px
-
-      h2
-        margin: 0 0 0 -3px
-        font-size: 28px
-        text-transform: uppercase
-        color: $cinzaVitrine
-
-    .revistas
-      a
-        @extend .padronizar-link
-        margin: 0 26px 26px 0
-        float: left
-  
-        .revista
+        .imagem
           width: 220px
-          height: 420px
+          height: 280px
           background: $branco
-          box-shadow: 0 -7px 10px $cinzaSombra
+          border-bottom: 1px solid $cinzaSombra
 
-          .imagem
+          img
             width: 220px
             height: 280px
-            background: $branco
-            border-bottom: 1px solid $cinzaSombra
+            -webkit-transition: opacity 0.4s linear
+            transition: opacity 0.4s linear
 
-            img
-              width: 220px
-              height: 280px
-              -webkit-transition: opacity 0.4s linear
-              transition: opacity 0.4s linear
+          img:hover
+            opacity: 0.7 !important
 
-            img:hover
-              opacity: 0.7 !important
+        .informacoes
+          padding: 20px
 
-          .informacoes
-            padding: 20px
+          .numero-edicao
+            margin: 0 0 15px 0
+            color: $cinzaTexto
 
-            .numero-edicao
-              margin: 0 0 15px 0
+            h5
+              font-size: 18px
+              text-transform: uppercase
+
+          .titulo-edicao
+            p
+              color: $preto
+
+            p:hover
               color: $cinzaTexto
 
-              h5
-                font-size: 18px
-                text-transform: uppercase
+    a:last-child
+      margin-right: 0
 
-            .titulo-edicao
-              p
-                color: $preto
+// ### Todas as edições ###
+.todas-edicoes
+  margin-top: 40px !important
 
-              p:hover
-                color: $cinzaTexto
+  .cabecalho-edicoes
+    margin: 0 0 25px 0
 
-      a:last-child
+    h1
+      @extend .titulo-pagina-laranja
+
+  .area-busca
+    width: 468px
+    height: 420px
+    margin: 0 26px 26px 0
+    background: $laranja
+    box-shadow: 0 -7px 10px $cinzaSombra
+    float: left
+
+    .borda-topo
+      width: 200px
+      height: 70px
+      border-bottom: 2px solid $branco
+      -webkit-transition: width 1s ease-in-out
+      transition: width 1s ease-in-out
+
+    .formulario
+      padding: 30px 40px 40px
+
+      form
+        .mensagem
+          margin: 0 0 20px 0
+
+          label
+            font-size: 28px
+            line-height: 35px
+            color: $branco
+            text-transform: uppercase
+
+        input[type="text"]
+          width: 372px
+          height: 40px
+          border: 2px solid $branco
+          padding: 5px
+          color: $branco
+          font: 20px Gotham
+          background: $laranja
+          -webkit-transition: background 0.3s linear
+          transition: background 0.3s linear
+          float: left
+
+        input[type="text"]:focus
+          background: $laranjaEscuro
+
+        input[type="button"]
+          width: 25px
+          height: 25px
+          background: url("../imagens/sprite-icones.png") no-repeat -55px -25px
+          margin: 15px -40px 0 -40px
+          cursor: pointer
+          border: 0
+          outline: 0
+
+  .lista-edicoes
+    .revistas
+      a:nth-child(2)
         margin-right: 0
 
+      a:nth-child(4n+2)
+        margin-right: 0
+
+.edicoes
+  .area-busca:hover
+    .borda-topo
+      width: 350px
+
+// ### Sobre nós ###
+.sobre-nos
+  width: 960px
+  margin: 0 auto
+  margin-top: 40px
+
+  .cabecalho-sobre-nos
+    h1
+      @extend .titulo-pagina-laranja
+      margin: 0 0 40px 0
+
+  .texto-sobre-nos
+    width: 790px
+
+    .cabecalho-texto-sobre-nos
+      margin: 0 0 40px 0
+
+      h2
+        font-size: 32px
+        color: $cinzaTexto
+
+    .corpo-texto-sobre-nos
+      p
+        font-size: 16px
+        margin: 0 0 25px 0
+
+  .icones-destaques
+    width: 800px
+    margin: 0 auto
+    margin-top: 70px
+    text-align: center
+
+    .icone
+      width: 165px
+      height: 200px
+      margin: 0 45px 0 0
+      margin-bottom: 70px
+      float: left
+
+      .imagem
+        width: 150px
+        height: 150px
+        margin: 0 auto
+        margin-bottom: 20px
+        background: $cinzaIcone153
+        opacity: 1
+        -webkit-transition: opacity 0.3s linear
+        transition: opacity 0.3s linear
+
+      .imagem:hover
+        opacity: 0.7
+
+
+      .texto-icone-destaque
+        span
+          font-size: 22px
+          color: $cinzaIcone153
+
+    .icone:first-child
+      .imagem
+        background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -5px 0
+
+    .icone:nth-child(2)
+      .imagem
+        background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -165px 0
+
+    .icone:nth-child(3)
+      .imagem
+        background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -5px -165px
+
+    .icone:nth-child(4)
+      margin-right: 0
+
+      .imagem
+        background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -165px -165px
+
+// ### Rodapé ###
 .rodape
   width: 100%
   margin: 100px 0 0
