@@ -418,19 +418,39 @@ body
       .imagem
         background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -5px 0
 
+    .icone:first-child:hover
+      .texto-icone-destaque
+        span
+          color: $laranja
+
     .icone:nth-child(2)
       .imagem
         background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -165px 0
+
+    .icone:nth-child(2):hover
+      .texto-icone-destaque
+        span
+          color: $verde
 
     .icone:nth-child(3)
       .imagem
         background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -5px -165px
 
-    .icone:nth-child(4)
+    .icone:nth-child(3):hover
+      .texto-icone-destaque
+        span
+          color: $amarelo
+
+    .icone:last-child
       margin-right: 0
 
       .imagem
         background: url("../imagens/sprite-icones-sobre-nos.png") no-repeat -165px -165px
+
+    .icone:last-child:hover
+      .texto-icone-destaque
+        span
+          color: $cinza110
 
 // ### Rodapé ###
 .rodape
