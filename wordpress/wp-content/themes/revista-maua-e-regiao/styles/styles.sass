@@ -452,6 +452,113 @@ body
         span
           color: $cinza110
 
+// ### Sobre nós ###
+.anuncie
+  width: 960px
+  margin: 0 auto
+  margin-top: 40px
+
+  .cabecalho-anuncie
+    h1
+      @extend .titulo-pagina-laranja
+      margin: 0 0 40px 0
+
+  .texto-anuncie
+    width: 960px
+    float: left
+
+    .cabecalho-texto-anuncie
+      width: 790px
+      margin: 0 0 40px 0
+
+      h2
+        font-size: 32px
+        color: $cinzaTexto
+
+    .corpo-texto-anuncie
+      width: 225px
+      float: left
+
+      p
+        font-size: 16px
+        margin: 0 0 25px 0
+
+      p:nth-child(2)
+        width: 300px
+
+    .tabela-modulos
+      width: 693px
+      height: 392px
+      margin: -20px 0 0 40px
+      background: url("../imagens/tabela-modulos.png") no-repeat
+      float: left
+
+  .contato
+    margin: 25px 0 0 0
+    float: left
+
+    .area-contato
+      width: 515px
+      height: 200px
+      margin: 0 30px 0 0
+      background: $verdeFlorescente
+      float: left
+      
+      .borda-topo
+        width: 170px
+        height: 45px
+        border-bottom: 2px solid $cinzaTexto
+        margin: 0 0 15px 0
+        -webkit-transition: width 1s ease-in-out
+        transition: width 1s ease-in-out
+
+      .mensagem
+        margin: 0 0 0 40px
+
+        h3
+          font-size: 22px
+          color: $cinzaTexto
+          text-transform: uppercase
+
+    .area-contato:hover
+      .borda-topo
+        width: 300px
+
+    .formulario
+      margin: 48px 0 0 0
+      float: left
+
+      form
+        label
+          font-size: 16px
+          text-transform: uppercase
+          font-style: italic
+
+        input[type="text"]
+          width: 400px
+          height: 30px
+          padding: 5px
+          margin: 10px 0 15px 0
+          border: 1px solid $cinza204
+          outline: 0
+          font: 20px Gotham
+          background: $cinzaBackground
+
+        input[type="text"]:focus
+          border: 1px solid $verdeFlorescente
+          color: $cinzaTexto
+
+        input[type="button"]
+          width: 107px
+          height: 39px
+          cursor: pointer
+          background: $verdeFlorescente url("../imagens/botao-enviar-anuncie.jpg") no-repeat
+          border: 2px solid $cinzaBackground
+          outline: 0
+
+        input[type="button"]:hover
+          border: 2px solid $verdeFlorescente
+
 // ### Rodapé ###
 .rodape
   width: 100%

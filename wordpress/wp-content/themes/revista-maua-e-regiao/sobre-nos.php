@@ -7,7 +7,7 @@
     <div class="texto-sobre-nos">
 
       <div class="cabecalho-texto-sobre-nos">
-        <h2>A Revista Mauá e Região é hoje, um dos nomes mais importantes na Região</h2>
+        <h2>A Revista Mauá e Região é hoje, um dos nomes mais importantes na região</h2>
       </div>
 
       <div class="corpo-texto-sobre-nos">
