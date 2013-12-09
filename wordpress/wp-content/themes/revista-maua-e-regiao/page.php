@@ -18,7 +18,7 @@
     include "gabaritos.php";
   } elseif (is_page("sobre-nos")) {
     include "sobre-nos.php";
-  } elseif("anuncie") {
+  } elseif(is_page("anuncie")) {
     include "anuncie.php";
   } elseif (is_page("fale-conosco")) {
     include "fale-conosco.php";
