@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<?php if (is_page("fale-conosco")) { ?>
+<div class="cabecalho-fale-conosco">
+  <h1>Fale conosco</h1>
+</div>
+<?php } ?>
+
 <div class="banner <?php echo definirClasseParaPaginas(); ?>">
   <div class="conteudos">
     <div class="texto">
@@ -10,6 +16,7 @@
     </div>
   </div>
 </div>
+
 <!-- # Banner -->
 <?php
   if (is_page("todas-as-edicoes")) {
