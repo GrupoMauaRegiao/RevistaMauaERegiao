@@ -68,6 +68,8 @@ body
           float: left
           background: url("../imagens/sprite-redes-sociais.png") no-repeat
           background-position: 0 -120px
+          -webkit-transition: -webkit-transform 0.3s ease-in-out
+          transition: transform 0.3s ease-in-out
 
       a:first-child
         .icone
@@ -80,6 +82,11 @@ body
       a:last-child
         .icone
           background-position: 0 0
+
+      a:hover
+        .icone
+          -webkit-transform: rotate(10deg)
+          transform: rotate(10deg)
 
   .navegacao
     width: 100%
@@ -767,6 +774,8 @@ body
             height: 60px
             margin: -12px 0 0 0
             float: left
+            -webkit-transition: margin 0.3s ease-in-out
+            transition: margin 0.3s ease-in-out
 
         a:first-child
           .icone
@@ -779,6 +788,10 @@ body
         a:last-child
           .icone
             background: url("../imagens/sprite-icones-player.png") no-repeat -142px -9px
+
+        a:hover
+          .icone
+            margin-top: -6px
 
   .informacoes-edicao
     width: 960px
