@@ -13,8 +13,10 @@ function definirClasseParaPaginas() {
     $classe = "pagina-anuncie";
   } elseif (is_page("fale-conosco")) {
     $classe = "pagina-fale-conosco";
+  } elseif (is_category("edicao")) {
+    $classe = "pagina-edicao";
   } else {
-    $classe = 'esconder';
+    $classe = "esconder";
   }
   return $classe;
 }

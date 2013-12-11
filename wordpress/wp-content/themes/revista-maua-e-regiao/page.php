@@ -6,6 +6,7 @@
 </div>
 <?php } ?>
 
+
 <div class="banner <?php echo definirClasseParaPaginas(); ?>">
   <div class="conteudos">
     <div class="texto">

@@ -717,6 +717,101 @@ body
         input:hover
           border: 1px solid $amareloFlorescente
 
+// ### Edição ###
+
+.cabecalho-edicao
+  width: 960px
+  margin: 0 auto
+
+  h1
+    @extend .titulo-pagina-laranja
+    margin: 0 0 40px 0
+
+// ### Edição ###
+.cabecalho-edicao
+  margin-top: 40px
+
+.edicao
+  margin: -25px 0 0 0
+
+  .player-edicao
+    width: 100%
+    height: 635px
+    background: $cinzaVitrine
+
+    .player
+      iframe
+        border: 0
+        outline: 0
+        margin: 30px 0 30px 0
+
+    .numero-edicao
+      width: 960px
+      margin: 0 auto
+
+      h1
+        font-size: 35px
+        text-transform: uppercase
+        color: $branco
+
+    .redes-sociais
+      width: 960px
+      margin: 0 auto
+
+      .icones
+        float: right
+
+        a
+          .icone
+            width: 66px
+            height: 60px
+            margin: -12px 0 0 0
+            float: left
+
+        a:first-child
+          .icone
+            background: url("../imagens/sprite-icones-player.png") no-repeat -2px -9px
+
+        a:nth-child(2)
+          .icone
+            background: url("../imagens/sprite-icones-player.png") no-repeat -72px -9px
+
+        a:last-child
+          .icone
+            background: url("../imagens/sprite-icones-player.png") no-repeat -142px -9px
+
+  .informacoes-edicao
+    width: 960px
+    margin: 0 auto
+    margin-top: 30px
+
+    .titulo-edicao
+      width: 780px
+      margin: 0 0 50px 0
+      float: left
+
+      h2
+        width: 480px
+        font-size: 18px
+        color: $cinzaTexto
+
+    .data-edicao
+      width: 180px
+      float: right
+
+      .icone-relogio
+        width: 17px
+        height: 17px
+        margin: 0 10px 0 0
+        background: url("../imagens/sprite-icones.png") no-repeat -37px -80px
+        float: left
+
+      .mes
+        span
+          text-transform: uppercase
+          color: $cinzaTexto
+          font-size: 18px
+
 // ### Rodapé ###
 .rodape
   width: 100%
