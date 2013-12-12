@@ -1,10 +1,12 @@
 Revista = Revista or {}
 
 Revista.apps =
-  teste: ->
-    console.log "scripts rodando"
+  filtrarListaEdicoes: ->
+    options =
+      valueNames: ['numero']
+    userList = new List 'revistas', options
     return
 
 window.onload = ->
-  Revista.apps.teste()
+  Revista.apps.filtrarListaEdicoes()
   return

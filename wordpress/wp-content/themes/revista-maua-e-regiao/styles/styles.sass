@@ -225,6 +225,10 @@ body
       height: 450px
       background: $cinzaVitrine
 
+      iframe
+        width: 960px
+        height: 450px
+
 // ### Home e Todas as edições ###
 .secao-relembre,
 .edicoes
@@ -316,39 +320,39 @@ body
     .formulario
       padding: 30px 40px 40px
 
-      form
-        .mensagem
-          margin: 0 0 20px 0
+      .mensagem
+        margin: 0 0 20px 0
 
-          label
-            font-size: 28px
-            line-height: 35px
-            color: $branco
-            text-transform: uppercase
-
-        input[type="text"]
-          width: 372px
-          height: 40px
-          border: 2px solid $branco
-          padding: 5px
+        label
+          font-size: 28px
+          line-height: 35px
           color: $branco
-          font: 20px Gotham
-          background: $laranja
-          -webkit-transition: background 0.3s linear
-          transition: background 0.3s linear
-          float: left
+          text-transform: uppercase
 
-        input[type="text"]:focus
-          background: $laranjaEscuro
+      input[type="text"]
+        width: 372px
+        height: 40px
+        border: 2px solid $branco
+        padding: 5px
+        color: $branco
+        font: 20px Gotham
+        background: $laranja
+        -webkit-transition: background 0.3s linear
+        transition: background 0.3s linear
+        text-align: center
+        float: left
 
-        input[type="button"]
-          width: 25px
-          height: 25px
-          background: url("../imagens/sprite-icones.png") no-repeat -55px -25px
-          margin: 15px -40px 0 -40px
-          cursor: pointer
-          border: 0
-          outline: 0
+      input[type="text"]:focus
+        background: $laranjaEscuro
+
+      input[type="button"]
+        width: 25px
+        height: 25px
+        background: url("../imagens/sprite-icones.png") no-repeat -55px -25px
+        margin: 15px -40px 0 -40px
+        cursor: pointer
+        border: 0
+        outline: 0
 
   .lista-edicoes
     .revistas
@@ -748,6 +752,8 @@ body
 
     .player
       iframe
+        width: 100%
+        height: 500px
         border: 0
         outline: 0
         margin: 30px 0 30px 0
@@ -823,7 +829,7 @@ body
         span
           text-transform: uppercase
           color: $cinzaTexto
-          font-size: 18px
+          font-size: 16px
 
 // ### Rodapé ###
 .rodape

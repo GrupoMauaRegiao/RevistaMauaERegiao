@@ -5,187 +5,47 @@
       <h1>Edições</h1>
     </div>
 
-    <div class="area-busca">
-      <div class="borda-topo">
-      </div>
-      <div class="formulario">
-        <form action="" method="get">
-          <div class="mensagem">
-            <label for="busca">
-              Qual o número da<br>
-              edição que deseja<br>
-              encontrar?
-            </label>
-          </div>
-          <input type="text" id="busca" name="busca">
-          <input type="button" name="botao-busca" value=" ">
-        </form>
-      </div>
-    </div>
 
     <div class="lista-edicoes">
-      <div class="revistas">
+      <div class="revistas" id="revistas">
 
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_peq.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 47</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Polo Petroquímico: chamas, poluição e doenças. Progresso ou retrocesso?</p>
-              </div>
-            </div>
+        <div class="area-busca">
+          <div class="borda-topo">
           </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_46.gif" alt="">
+          <div class="formulario">
+            <div class="mensagem">
+              <label for="busca">
+                Qual o número da<br>
+                edição que deseja<br>
+                encontrar?
+              </label>
             </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 46</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Átila Jacomussi: novos projetos e a nova visão a frente da SAMA</p>
-              </div>
-            </div>
+            <input id="busca" type="text" name="busca" class="search" maxlength="2">
+            <input type="button" name="botao-busca" value=" ">
           </div>
-        </a>
+        </div>
 
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_45.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 45</h5>
+        <div class="list">
+          <?php query_posts("orderby=asc&posts_per_page=4&category_name=revista"); ?>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <a href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post->ID; ?>">
+              <div class="revista">
+                <div class="imagem">
+                  <img src="<?php echo get_post_meta($post -> ID, "Imagem CAPA", true); ?>" alt="">
+                </div>
+                <div class="informacoes">
+                  <div class="numero-edicao">
+                    <h5>Edição <span class="numero"><?php echo get_post_meta($post -> ID, "Edição", true); ?></span></h5>
+                  </div>
+                  <div class="titulo-edicao">
+                    <p><?php the_title(); ?></p>
+                  </div>
+                </div>
               </div>
-              <div class="titulo-edicao">
-                <p>Sonia Braga: um novo olhar para a cidadania</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_44.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 44</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Mauá ontem e hoje - Parte final</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_peq.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 47</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Polo Petroquímico: chamas, poluição e doenças. Progresso ou retrocesso?</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_46.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 46</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Átila Jacomussi: novos projetos e a nova visão a frente da SAMA</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_45.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 45</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Sonia Braga: um novo olhar para a cidadania</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_44.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 44</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Mauá ontem e hoje - Parte final</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_44.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 44</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Mauá ontem e hoje - Parte final</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="revista">
-            <div class="imagem">
-              <img src="http://www.revistamaua.com.br/img/capa_big_44.gif" alt="">
-            </div>
-            <div class="informacoes">
-              <div class="numero-edicao">
-                <h5>Edição 44</h5>
-              </div>
-              <div class="titulo-edicao">
-                <p>Mauá ontem e hoje - Parte final</p>
-              </div>
-            </div>
-          </div>
-        </a>
-
+            </a>
+          <?php endwhile; else: ?>
+          <?php endif; ?>
+        </div>
       </div>
     </div>
 

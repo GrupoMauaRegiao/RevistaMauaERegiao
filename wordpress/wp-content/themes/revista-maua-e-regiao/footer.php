@@ -22,6 +22,10 @@
     <!-- # Layout -->
 
     <?php wp_footer(); ?>
+    <?php wp_reset_query(); ?>
+    <?php if (is_page("todas-as-edicoes")) : ?>
+      <script src="<?php bloginfo('template_url'); ?>/scripts/libs/list.min.js"></script>
+    <?php endif; ?>
     <script src="<?php bloginfo('template_url'); ?>/scripts/scripts.js"></script>
   </body>
 </html>
