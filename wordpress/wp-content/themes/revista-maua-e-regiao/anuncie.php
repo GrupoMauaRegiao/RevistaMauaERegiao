@@ -37,7 +37,7 @@
       </div>
 
       <div class="formulario">
-        <form action="any.php" method="get">
+        <form action="<?php bloginfo('template_url'); ?>/enviar-e-mail.php" method="get">
 
           <label for="nome">Nome</label><br>
           <input type="text" id="nome" name="nome"><br>
@@ -45,8 +45,13 @@
           <label for="e-mail">E-mail</label><br>
           <input type="text" id="e-mail" name="e-mail"><br>
 
-          <input type="button" value=" " name="enviar">
+          <input type="button" id="enviar" value=" " name="enviar">
         </form>
+
+        <div class="mensagem-sucesso">
+          <p>Dados enviados com sucesso. Obrigado!</p>
+        </div>
+
       </div>
     </div>
 

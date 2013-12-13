@@ -7,6 +7,13 @@
 body
   background: $cinzaBackground
 
+.exibir
+  display: block !important
+
+.erro
+  border: 1px solid $vermelho !important
+  background: $rosa !important
+
 .esconder
   display: none
 
@@ -333,9 +340,10 @@ body
         width: 372px
         height: 40px
         border: 2px solid $branco
+        outline: 0
         padding: 5px
         color: $branco
-        font: 20px Gotham
+        font: bold 30px Gotham
         background: $laranja
         -webkit-transition: background 0.3s linear
         transition: background 0.3s linear
@@ -570,6 +578,18 @@ body
         input[type="button"]:hover
           border: 1px solid $verdeFlorescente
 
+      .mensagem-sucesso
+        width: 415px
+        height: 170px
+        padding: 35px 0 0
+        display: none
+
+        p
+          font-size: 25px
+          text-transform: uppercase
+          color: $cinzaTexto
+          text-shadow: 1px 1px 0px $branco
+
 // ### Fale conosco ###
 .cabecalho-fale-conosco
   width: 960px
@@ -727,6 +747,19 @@ body
 
         input:hover
           border: 1px solid $amareloFlorescente
+
+    .mensagem-sucesso
+      width: 960px
+      height: 200px
+      padding: 35px 0 0
+      text-align: center
+      display: none
+
+      p
+        font-size: 25px
+        text-transform: uppercase
+        color: $cinzaTexto
+        text-shadow: 1px 1px 0px $branco
 
 // ### Edição ###
 
