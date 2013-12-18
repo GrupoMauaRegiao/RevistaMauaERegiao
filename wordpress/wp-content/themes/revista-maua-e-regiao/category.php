@@ -3,6 +3,7 @@
 <?php
 include "bitly-url-shortener.php";
 include "config.php";
+$linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
 ?>
 
 <div class="conteudo">
@@ -14,8 +15,8 @@ include "config.php";
 
     <div class="player-edicao">
       <div class="player">
-        <?php $numeroEdicao = "&p=" . $_GET["id"]; ?>
-        <?php query_posts("posts_per_page=1" . $numeroEdicao); ?>
+        <?php $IDEdicao = "&p=" . $_GET["id"]; ?>
+        <?php query_posts("posts_per_page=1" . $IDEdicao); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <?php echo get_post_meta($post -> ID, "iframe ISSUU (sem width e height)", true); ?>
       </div>
@@ -27,24 +28,43 @@ include "config.php";
         </div>
 
         <?php
-        $permalink = get_permalink();
         $titulo = get_the_title();
+        $textoTweet = 'Edição ' . $numeroEdicao . ': ' . $titulo;
         ?>
 
         <div class="redes-sociais">
           <div class="icones">
-            <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>">
+            <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $linkAtual; ?>">
               <div class="icone"></div>
             </a>
 
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=Edição <?php echo $numeroEdicao; ?>: <?php echo $titulo; ?>&amp;url=<?php echo urlShortBitly($permalink, $apiToken); ?>&amp;via=tvmauaeregiao&amp;hashtags=maua,revistamaua">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode($textoTweet); ?>&amp;url=<?php echo urlShortBitly($linkAtual, $apiToken); ?>&amp;via=tvmauaeregiao&amp;hashtags=maua">
               <div class="icone"></div>
             </a>
 
-            <a href="#outros">
+            <a class="enviar-para-um-amigo" href="#enviar-para-um-amigo">
               <div class="icone"></div>
             </a>
           </div>
+        </div>
+      </div>
+
+      <div class="enviar-para-amigo">
+        <div class="formulario">
+          <form action="<?php bloginfo('template_url'); ?>/enviar-e-mail.php">
+            <label for="e-mail">Enviar a um amigo por e-mail:</label><br>
+            <input type="text" id="e-mail" name="e-mail">
+            <input type="button" id="enviar" value="Enviar" name="enviar">
+            <input type="hidden" id="mensagem" name="mensagem" value="<?php echo 'Um amigo enviou para você o link para ler a edição ' . $numeroEdicao . ' da Revista Mauá e Região: ' . $linkAtual; ?>">
+            <input type="hidden" id="flag" name="flag">
+          </form>
+
+          <div class="mensagem-sucesso">
+            <p>
+              E-mail enviado com sucesso.<br>
+              O seu amigo irá gostar!</p>
+          </div>
+
         </div>
       </div>
 

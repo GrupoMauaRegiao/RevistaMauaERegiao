@@ -877,6 +877,58 @@ body
           .icone
             margin-top: -6px
 
+  .enviar-para-amigo
+    width: 328px
+    padding: 15px
+    background: $laranja
+    position: absolute
+    right: 174px
+    box-shadow: 0 4px 4px $cinzaClaroBorda
+    display: none
+
+    .formulario
+      form
+        label
+          font-size: 14px
+          font-weight: bold
+          color: $branco
+          text-transform: uppercase
+
+        input[type='text']
+          width: 200px
+          height: 30px
+          padding: 5px
+          border: 1px solid $cinzaBackground
+          outline: 0
+          margin: 10px 10px 0 0
+          font: bold 16px Gotham
+
+        input[type='text']:focus
+          border: 1px solid $laranjaEscuro
+
+        input[type='button']
+          width: 100px
+          height: 42px
+          background: $laranjaEscuro
+          cursor: pointer
+          border: 0
+          outline: 0
+          text-transform: uppercase
+          font: 16px Gotham
+          color: $branco
+
+        input[type='button']:hover
+          background: $laranjaEscuro - 10
+
+      .mensagem-sucesso
+        display: none
+
+        p
+          font-size: 16px
+          font-weight: bold
+          text-transform: uppercase
+          color: $branco
+
   .informacoes-edicao
     width: 960px
     margin: 0 auto

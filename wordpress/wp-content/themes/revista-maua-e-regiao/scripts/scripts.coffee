@@ -2,8 +2,8 @@ Revista = Revista or {}
 
 Revista.apps =
   filtrarListaEdicoes: ->
-    revistas = document.querySelector '.revistas'
-    if revistas
+    lista = document.querySelector '.list'
+    if lista
       options =
         valueNames: ['numero']
       userList = new List 'revistas', options
@@ -17,6 +17,12 @@ Revista.apps =
       cMsg = document.querySelector '#mensagem'
       msgSucesso = document.querySelector '.mensagem-sucesso'
       botao = document.querySelector '#enviar'
+
+      if cNome is null
+        cNome =
+          value: 'Amigo'
+
+        flag = true
 
       if cMsg is null
         cMsg =
@@ -33,6 +39,9 @@ Revista.apps =
               msg += 'nome=' + encodeURI(cNome.value)
               msg += '&e-mail=' + encodeURI(cEmail.value)
               msg += '&mensagem=' + encodeURI(cMsg.value)
+              if flag
+                msg += '&flag=' + flag
+
               xhr.open formulario.method, formulario.action + '?' + msg, true
               xhr.send msg
               xhr.onreadystatechange = ->
@@ -54,7 +63,23 @@ Revista.apps =
         return
     return
 
+  controlarBoxEnviarParaAmigo: ->
+    iconeEnviarParaAmigo = document.querySelector '.enviar-para-um-amigo'
+    if iconeEnviarParaAmigo
+      _exibirOcultarBox = ->
+        boxEnviarParaAmigo = document.querySelector '.enviar-para-amigo'
+        style = boxEnviarParaAmigo.style.display
+        if style isnt 'block'
+          boxEnviarParaAmigo.style.display = 'block'
+        else
+          boxEnviarParaAmigo.style.display = 'none'
+        return
+
+      iconeEnviarParaAmigo.addEventListener 'click', _exibirOcultarBox
+    return
+
 window.onload = ->
   Revista.apps.filtrarListaEdicoes()
+  Revista.apps.controlarBoxEnviarParaAmigo()
   Revista.apps.enviarEmail()
   return
