@@ -160,8 +160,28 @@ body
 
           .formulario-busca-topo
             input[type='text']
-              width: 0
+              width: 235px
+              height: 20px
+              font: bold 12px Gotham
+              text-transform: uppercase
+              margin: -10px 0px 0 65px
+              padding: 5px
+              border: 1px solid $cinzaClaroBorda
+              outline: 0
+              background: $cinzaBackground
+              position: absolute
               display: none
+
+            input[type='text']:hover
+              border-color: $cinzaIcone153
+
+            input[type='text']:focus
+              border-color: $laranja
+              box-shadow: 0 0 10px $laranja
+
+            input[type='text']:focus + input[type='button']
+              background-position: -2px -78px
+
 
             input[type='button']
               width: 25px
@@ -170,7 +190,11 @@ body
               border: 0
               outline: 0
               cursor: pointer
-              background: url('../imagens/sprite-icones.png') no-repeat -3px -78px
+              background: url('../imagens/sprite-icones.png') no-repeat -83px -25px
+
+        .busca:hover
+          input[type='text']
+            display: block
 
         .links
           margin: 40px 0 0

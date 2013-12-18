@@ -1,7 +1,9 @@
-<?php //$category = get_the_category(); ?>
-
 <?php get_header(); ?>
 
+<?php
+include "bitly-url-shortener.php";
+include "config.php";
+?>
 
 <div class="conteudo">
   <div class="cabecalho-edicao">
@@ -18,17 +20,24 @@
           <?php echo get_post_meta($post -> ID, "iframe ISSUU (sem width e height)", true); ?>
       </div>
 
+        <?php $numeroEdicao = get_post_meta($post -> ID, "Edição", true); ?>
+
         <div class="numero-edicao">
-          <h1>Edição <?php echo get_post_meta($post -> ID, "Edição", true); ?></h1>
+          <h1>Edição <?php echo $numeroEdicao; ?></h1>
         </div>
+
+        <?php
+        $permalink = get_permalink();
+        $titulo = get_the_title();
+        ?>
 
         <div class="redes-sociais">
           <div class="icones">
-            <a href="#facebook">
+            <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>">
               <div class="icone"></div>
             </a>
 
-            <a href="#twitter">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Edição <?php echo $numeroEdicao; ?>: <?php echo $titulo; ?>&amp;url=<?php echo urlShortBitly($permalink, $apiToken); ?>&amp;via=tvmauaeregiao&amp;hashtags=maua,revistamaua">
               <div class="icone"></div>
             </a>
 

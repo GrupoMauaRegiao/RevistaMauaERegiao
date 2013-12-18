@@ -47,7 +47,7 @@
               </div>
               <div class="busca">
                 <form action="buscar.php" class="formulario-busca-topo">
-                  <input type="text" name="bucar" placeholder="Pesquisar">
+                  <input type="text" name="buscar" placeholder="Busque assuntos">
                   <input type="button" name="botao-buscar" value=" ">
                 </form>
               </div>
