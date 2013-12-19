@@ -21,7 +21,6 @@ Revista.apps =
       if cNome is null
         cNome =
           value: 'Amigo'
-
         flag = true
 
       if cMsg is null
