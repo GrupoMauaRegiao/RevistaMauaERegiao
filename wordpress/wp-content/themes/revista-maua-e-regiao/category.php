@@ -51,9 +51,10 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
 
       <div class="enviar-para-amigo">
         <div class="formulario">
-          <form action="<?php bloginfo('template_url'); ?>/enviar-e-mail.php">
+          <form action="<?php bloginfo('template_url'); ?>/enviar-e-mail.php" method="get">
             <label for="e-mail">Enviar a um amigo por e-mail:</label><br>
             <input type="text" id="e-mail" name="e-mail">
+            <input type="text" id="ignorado" name="ignorado" style="display:none;">
             <input type="button" id="enviar" value="Enviar" name="enviar">
             <input type="hidden" id="mensagem" name="mensagem" value="<?php echo 'Um amigo enviou para você o link para ler a edição ' . $numeroEdicao . ' da Revista Mauá e Região: ' . $linkAtual; ?>">
             <input type="hidden" id="flag" name="flag">

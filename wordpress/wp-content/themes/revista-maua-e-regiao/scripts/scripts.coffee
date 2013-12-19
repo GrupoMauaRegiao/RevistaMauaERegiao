@@ -59,6 +59,7 @@ Revista.apps =
           cNome.setAttribute 'class', 'erro'
 
         evt.preventDefault()
+        evt.stopPropagation()
         return
     return
 
