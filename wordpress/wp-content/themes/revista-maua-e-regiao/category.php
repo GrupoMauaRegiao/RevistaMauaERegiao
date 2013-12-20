@@ -34,15 +34,15 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
 
         <div class="redes-sociais">
           <div class="icones">
-            <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $linkAtual; ?>">
+            <a title="Compartilhe no facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo $linkAtual; ?>">
               <div class="icone"></div>
             </a>
 
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode($textoTweet); ?>&amp;url=<?php echo urlShortBitly($linkAtual, $apiToken); ?>&amp;via=tvmauaeregiao&amp;hashtags=maua">
+            <a title="Compartilhe no twitter" target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo urlencode($textoTweet); ?>&amp;url=<?php echo urlShortBitly($linkAtual, $apiToken); ?>&amp;via=tvmauaeregiao&amp;hashtags=maua">
               <div class="icone"></div>
             </a>
 
-            <a class="enviar-para-um-amigo" href="#enviar-para-um-amigo">
+            <a title="Envie a um amigo" class="enviar-para-um-amigo" href="#enviar-a-um-amigo">
               <div class="icone"></div>
             </a>
           </div>
@@ -89,7 +89,7 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
       <div class="revistas">
         <?php query_posts("orderby=asc&posts_per_page=4&category_name=revista"); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <a href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post -> ID; ?>">
+          <a title="Edição <?php echo get_post_meta($post -> ID, "Edição", true); ?>" href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post -> ID; ?>">
             <div class="revista">
               <div class="imagem">
                 <img src="<?php echo get_post_meta($post -> ID, "Imagem CAPA", true); ?>" alt="">
