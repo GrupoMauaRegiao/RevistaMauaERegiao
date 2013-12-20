@@ -46,9 +46,9 @@
                 </ul>
               </div>
               <div class="busca">
-                <form action="buscar.php" class="formulario-busca-topo">
-                  <input type="text" name="buscar" placeholder="Busque assuntos">
-                  <input type="button" name="botao-buscar" value=" ">
+                <form action="<?php echo esc_url(home_url('/')); ?>" class="formulario-busca-topo">
+                  <input type="text" name="s" placeholder="BUSQUE ASSUNTOS">
+                  <input type="submit" value=" ">
                 </form>
               </div>
               <div class="links">

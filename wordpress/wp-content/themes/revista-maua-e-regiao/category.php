@@ -82,16 +82,14 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
       </div>
     <?php endwhile; else: ?>
     <?php endif; ?>
-
     <div class="secao-relembre">
       <div class="cabecalho-secao-relembre">
         <h2>Anteriores</h2>
       </div>
-
       <div class="revistas">
         <?php query_posts("orderby=asc&posts_per_page=4&category_name=revista"); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <a href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post->ID; ?>">
+          <a href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post -> ID; ?>">
             <div class="revista">
               <div class="imagem">
                 <img src="<?php echo get_post_meta($post -> ID, "Imagem CAPA", true); ?>" alt="">

@@ -163,7 +163,6 @@ body
               width: 235px
               height: 20px
               font: bold 12px Gotham
-              text-transform: uppercase
               margin: -10px 0px 0 65px
               padding: 5px
               border: 1px solid $cinzaClaroBorda
@@ -183,7 +182,7 @@ body
               background-position: -2px -78px
 
 
-            input[type='button']
+            input[type='submit']
               width: 25px
               height: 22px
               margin: -4px 30px 0
@@ -807,7 +806,6 @@ body
         text-shadow: 1px 1px 0px $branco
 
 // ### Edição ###
-
 .cabecalho-edicao
   width: 960px
   margin: 0 auto
@@ -816,7 +814,6 @@ body
     @extend .titulo-pagina-laranja
     margin: 0 0 40px 0
 
-// ### Edição ###
 .cabecalho-edicao
   margin-top: 40px
 
@@ -960,6 +957,110 @@ body
           text-transform: uppercase
           color: $cinzaTexto
           font-size: 16px
+
+// ### Resultado da busca ###
+.resultado-busca
+  width: 960px
+  margin: 0 auto
+
+  .revistas
+    .cabecalho-revistas
+      width: 960px
+      margin: 50px 0 20px 0
+      float: left
+
+      h2
+        font-size: 20px
+        color: $cinzaTexto
+        text-transform: uppercase
+
+        i
+          color: $laranja
+          font-style: italic
+
+    .display
+      margin: 20px 0 0
+      float: left
+
+      .informacoes-adicionais
+        margin: -20px 0 20px 0
+
+        p
+          color: $cinzaTexto
+          font-size: 20px
+
+          i
+            font-weight: bold
+
+      .revista
+        width: 960px
+        height: 120px
+        margin: 0 0 20px 0
+        overflow: hidden
+        float: left
+
+        .imagem
+          width: 75px
+          height: 100px
+          margin: 0 20px 0 0
+          float: left
+
+          img
+            width: 75px
+            height: 100px
+
+      .informacoes
+        width: 864px
+        height: 75px
+        padding: 5px 0 0
+        float: left
+
+        .busca-edicao
+          width: 864px
+          margin: 0 0 20px 0
+
+          span
+            padding: 5px
+            background: $laranja
+            text-transform: uppercase
+            font-size: 14px
+            color: $branco
+
+        .busca-titulo-edicao
+          margin: 0 0 10px 0
+          a
+            font-size: 22px
+            text-transform: uppercase
+            text-decoration: none
+            color: $cinza110
+
+          a:hover
+            text-decoration: underline
+            color: $cinzaIcone153
+
+        .tags
+          ul
+            li
+              display: inline-block
+              margin: 0 5px 0
+
+              a
+                color: $laranjaEscuro
+
+              a:hover
+                text-decoration: none
+                color: $laranjaEscuro - 10
+
+              span
+                text-transform: uppercase
+                color: $cinzaTexto
+
+              .marcador
+                color: $laranja
+
+            li:last-child
+              span
+                display: none
 
 // ### Rodapé ###
 .rodape
