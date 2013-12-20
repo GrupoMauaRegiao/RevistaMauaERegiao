@@ -1,1 +1,3 @@
-<?php header("Location: http://revistamaua.com.br"); ?>
+<?php get_header(); ?>
+
+<?php get_footer(); ?>
