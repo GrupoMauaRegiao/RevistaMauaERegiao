@@ -27,7 +27,7 @@
     </div>
 
     <div class="formulario">
-      <form action="<?php bloginfo('template_url'); ?>/enviar-e-mail.php" method="get">
+      <form action="<?php bloginfo('template_url'); ?>/enviar-mensagem.php" method="get">
         <div class="nome">
           <label for="nome">Nome</label><br>
           <input type="text" id="nome" name="nome">
