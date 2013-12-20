@@ -12,16 +12,16 @@
 
       <div class="corpo-texto-sobre-nos">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, cupiditate, ipsum, non, quis ratione velit inventore facilis expedita assumenda sint modi accusamus amet at quos adipisci repellendus reiciendis est excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nulla, laboriosam, quaerat, ducimus velit saepe nihil delectus expedita iusto distinctio numquam impedit sint magnam id reprehenderit est magni accusantium voluptas!
+          Apesar do crescente meio tecnológico e das mídias virtuais em ascensão, hoje em dia o meio mais influente ainda continua sendo a revista impressa. Por isso, a Revista Mauá e Região se preocupa em produzir um conteúdo completo e atrativo para nossos leitores. Lançada em Agosto de 1999, a Revista Mauá abriu espaço para a novidade de um veículo local com grande aceitação proveniente de um forte time de anunciantes e de uma equipe focada em fazer sempre o melhor. Entretanto, no mesmo ano de seu lançamento, a produção teve de ser interrompida por não atender nos quesitos padrão e qualidade pelas quais havia sido investido.
         </p>
         <p>
-          Ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, mollitia, quas, voluptates quia soluta laborum vero consectetur aperiam ratione cupiditate alias saepe quo sit. Distinctio, illum dicta repellendus harum quis.
+          Passados quase dez anos, a revista voltou com força total. Trazia qualidade e conteúdo em nível superior e a seriedade que a população merecia.
         </p>
         <p>
-          Sit amet, consectetur adipisicing elit. Ab, vitae, natus atque aspernatur provident placeat consequuntur aut reprehenderit ducimus eligendi aliquam animi pariatur optio. Ad temporibus autem veniam velit at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ea laboriosam consectetur recusandae?
+          Hoje, a Revista Mauá & Região é um dos nomes mais fortes e respeitados do meio. Isso se deve ao trabalho nela investido, a preocupação com o design, a estética, o conteúdo e os anunciantes. Abordamos assuntos de cunho social, político, ambiental, de entretenimento e muitos outros, além de buscarmos junto a população, soluções para seu município, abrindo campo e condições para levar os assuntos até as autoridades competentes.
         </p>
         <p>
-          Amet, consectetur adipisicing elit. Voluptas, veniam, dolore officia rerum quidem facilis quae neque beatae nesciunt consequuntur nemo ducimus perferendis voluptatibus ab dolorem temporibus et fugiat deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quod, et laborum impedit.
+          Buscando sempre o melhor para o leitor e para o anunciante, a equipe é muito bem estruturada em trazer um sonho de revista e a fidelidade de nossos clientes e anunciantes. Agradecemos a todos os nossos parceiros e leitores. Não deixe de ler a edição do mês!
         </p>
       </div>
     </div>
