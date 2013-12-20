@@ -89,7 +89,7 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
       <div class="revistas">
         <?php query_posts("orderby=asc&posts_per_page=4&category_name=revista"); ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <a title="Edição <?php echo get_post_meta($post -> ID, "Edição", true); ?>" href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post -> ID; ?>">
+          <a title="Edição <?php echo get_post_meta($post -> ID, "Edição", true); ?>" href="<?php bloginfo("url") ?>/categorias/edicao/?id=<?php echo $post -> ID; ?>">
             <div class="revista">
               <div class="imagem">
                 <img src="<?php echo get_post_meta($post -> ID, "Imagem CAPA", true); ?>" alt="">

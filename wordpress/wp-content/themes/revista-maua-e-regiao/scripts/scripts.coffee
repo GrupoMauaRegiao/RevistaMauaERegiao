@@ -6,7 +6,9 @@ Revista.apps =
     if lista
       options =
         valueNames: ['numero']
-      userList = new List 'revistas', options
+        page: 10
+        plugins: [ ListPagination {} ]
+      listaRevistas = new List 'revistas', options
     return
 
   enviarEmail: ->

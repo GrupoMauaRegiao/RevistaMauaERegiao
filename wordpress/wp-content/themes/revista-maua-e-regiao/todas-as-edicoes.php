@@ -28,7 +28,7 @@
         <div class="list">
           <?php query_posts("orderby=asc&posts_per_page=4&category_name=revista"); ?>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <a href="<?php bloginfo("url") ?>/index.php/categorias/edicao/?id=<?php echo $post -> ID; ?>">
+            <a href="<?php bloginfo("url") ?>/categorias/edicao/?id=<?php echo $post -> ID; ?>">
               <div class="revista">
                 <div class="imagem">
                   <img src="<?php echo get_post_meta($post -> ID, "Imagem CAPA", true); ?>" alt="">
@@ -45,6 +45,11 @@
             </a>
           <?php endwhile; else: ?>
           <?php endif; ?>
+        </div>
+        <div class="paginador">
+          <div class="marcadores-pagina">
+            <ul class="pagination"></ul>
+          </div>
         </div>
       </div>
     </div>

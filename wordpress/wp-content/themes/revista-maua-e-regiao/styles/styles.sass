@@ -414,6 +414,41 @@ body
       a:nth-child(4n+2)
         margin-right: 0
 
+
+      .paginador
+        width: 960px
+        height: auto
+        float: left
+
+        .marcadores-pagina
+          width: 960px
+          height: 35px
+          text-align: center
+
+          .pagination
+            height: 35px
+
+            li
+              display: inline-block
+              padding: 5px
+              margin: 0 5px 0
+
+              a
+                font-size: 30px
+                font-weight: bold
+                color: $laranja
+                text-decoration: none
+                border-bottom: 2px solid $cinzaBackground
+
+              a:hover
+                color: $laranja - 60
+                border-bottom: 2px solid $laranja - 60
+
+            .active
+              a
+                color: $laranja - 60
+                border-bottom: 2px solid $laranja - 60
+
 .edicoes
   .area-busca:hover
     .borda-topo

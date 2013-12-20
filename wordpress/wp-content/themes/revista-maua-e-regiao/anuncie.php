@@ -7,15 +7,12 @@
     <div class="texto-anuncie">
 
       <div class="cabecalho-texto-anuncie">
-        <h2>A Revista Mauá e Região é hoje, um dos nomes mais importantes na região</h2>
+        <h2>Por que anunciar conosco?</h2>
       </div>
 
       <div class="corpo-texto-anuncie">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, cupiditate, ipsum, non, quis ratione velit inventore facilis expedita assumenda sint modi accusamus amet at quos adipisci repellendus reiciendis est excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nulla, laboriosam, quaerat, ducimus velit saepe nihil delectus expedita iusto distinctio numquam impedit sint magnam id reprehenderit est magni.
-        </p>
-        <p>
-          Ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, mollitia, quas, voluptates quia soluta laborum vero consectetur aperiam ratione cupiditate alias saepe.
+          Com mais de 10 mil exemplares distribuídos pelas cidades de Mauá, Ribeirão Pires, Rio Grande da Serra e Riacho Grande, a Revista Mauá e Região é o veículo mais completo e eficaz da região. Ela traz o dinamismo, a seriedade, o entretenimento e o melhor conteúdo para seus leitores. Com um design elaborado e bem estruturado conquista grandes parcerias com seus anunciantes, trazendo sempre o sucesso nas vendas e no resultado final de cada edição. Anuncie conosco e veja as vantagens de anunciar com o Grupo de Comunicação completo! Anuncie com quem entende do assunto!
         </p>
       </div>
 
