@@ -80,7 +80,26 @@ Revista.apps =
       iconeEnviarParaAmigo.addEventListener 'click', _exibirOcultarBox
     return
 
+  efeitoScrollCabecalho: ->
+    cabecalho = document.querySelector '.cabecalho'
+    banner = document.querySelector '.banner'
+
+    _scroll = ->
+      if this.pageYOffset > 0
+        if banner
+          banner.style.marginTop = '206px'
+        cabecalho.setAttribute 'class', 'fase2'
+      else
+        if banner
+          banner.style.marginTop = '0'
+        cabecalho.setAttribute 'class', 'cabecalho'
+      return
+
+    window.addEventListener 'scroll', _scroll
+    return
+
 window.onload = ->
+  Revista.apps.efeitoScrollCabecalho()
   Revista.apps.filtrarListaEdicoes()
   Revista.apps.controlarBoxEnviarParaAmigo()
   Revista.apps.enviarEmail()

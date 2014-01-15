@@ -57,6 +57,109 @@ body
   width: 100%
   font-family: Gotham, cursive
 
+// Barra Superior
+// alterada com scroll vertical
+.fase2
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: $branco url('../imagens/fundo-cabecalho-fase2.png') 50% 100% no-repeat
+  border-bottom: 1px solid $branco
+
+  .topo
+    display: none
+
+  .navegacao
+    width: 100%
+    height: 80px
+    float: left
+
+    .conteudos
+      width: 960px
+      height: 80px
+      margin: 0 auto
+
+      a
+        .logotipo
+          width: 161px
+          height: 93px
+          margin: 14px 0 0
+          background: url('../imagens/logotipo-revista-maua-e-regiao-peq.png') no-repeat
+          float: left
+
+      .menu
+        a
+          @extend .padronizar-link
+          text-transform: uppercase
+          color: $cinzaTexto
+
+        a:hover
+          color: $preto
+          border-bottom: 2px solid $cinzaTexto
+
+        .link-todas-edicoes
+          margin: 33px 0 0 157px
+          float: left
+
+          a
+            color: $laranja
+
+          a:hover
+            color: $preto
+
+        .busca
+          margin: 33px 0 0
+          float: left
+
+          .formulario-busca-topo
+            input[type='text']
+              width: 235px
+              height: 20px
+              font: bold 12px Gotham
+              margin: -10px 0px 0 65px
+              padding: 5px
+              border: 1px solid $cinzaClaroBorda
+              outline: 0
+              background: $cinzaBackground
+              position: absolute
+              display: none
+
+            input[type='text']:hover
+              border-color: $cinzaIcone153
+
+            input[type='text']:focus
+              border-color: $laranja
+              box-shadow: 0 0 10px $laranja
+
+            input[type='text']:focus + input[type='button']
+              background-position: -2px -78px
+
+
+            input[type='submit']
+              width: 25px
+              height: 22px
+              margin: -4px 30px 0
+              border: 0
+              outline: 0
+              cursor: pointer
+              background: url('../imagens/sprite-icones.png') no-repeat -83px -25px
+
+        .busca:hover
+          input[type='text']
+            display: block
+
+        .links
+          margin: 33px 0 0
+          float: left
+
+          ul
+            li
+              margin: 0 25px 0 0
+              display: inline-block
+
+            li:last-child
+              margin-right: 0
+
 .cabecalho
   .topo
     width: 100%
@@ -119,6 +222,7 @@ body
   .navegacao
     width: 100%
     height: 160px
+    position: relative
     float: left
 
     .conteudos
