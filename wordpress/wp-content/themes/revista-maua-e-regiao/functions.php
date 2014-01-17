@@ -7,7 +7,9 @@ function linksPaginas() {
 }
 
 function definirClasseParaPaginas() {
-  if (is_page("sobre-nos")) {
+  if (is_page("gabaritos")) {
+    $classe = "pagina-gabaritos";
+  } elseif (is_page("sobre-nos")) {
     $classe = "pagina-sobre-nos";
   } elseif (is_page("anuncie")) {
     $classe = "pagina-anuncie";

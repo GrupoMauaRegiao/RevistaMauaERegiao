@@ -38,6 +38,11 @@ body
 .esconder
   display: none
 
+.pagina-padrao
+  width: 960px
+  margin: 0 auto
+  margin-top: 40px
+
 .titulo-pagina-laranja
   font-size: 15px
   font-weight: bold
@@ -338,6 +343,7 @@ body
     height: 225px
     background: url('../imagens/banners/banner-home.jpg') no-repeat -35px 0
 
+.pagina-gabaritos,
 .pagina-sobre-nos,
 .pagina-anuncie
   .conteudos
@@ -345,6 +351,12 @@ body
 
     .texto
       display: none
+
+.pagina-gabaritos
+  background: $rosaClaro
+
+  .conteudos
+    background: url('../imagens/banners/banner-gabaritos.jpg') no-repeat -40px 0
 
 .pagina-sobre-nos
   background: $azulFlorescente
@@ -558,11 +570,83 @@ body
     .borda-topo
       width: 350px
 
+// ### Gabaritos ###
+.pag-gabaritos
+  @extend .pagina-padrao
+
+  .cabecalho-gabaritos
+    h1
+      @extend .titulo-pagina-laranja
+      margin: 0 0 40px 0
+
+  .texto-gabaritos
+    .cabecalho-texto-gabaritos
+      margin: 0 0 40px 0
+
+      h2
+        font-size: 32px
+        color: $cinzaTexto
+
+    .boxes-gabaritos
+      .box-modulos,
+      .boxes-outros
+        width: 305px
+        float: left
+
+      .boxes-outros
+        width: 360px
+
+      .modulo,
+      .box-outro
+        float: left
+        margin: 0 0 25px 0
+
+        .informacoes-modulo,
+        .informacoes-box-outro
+          margin: 0 5px 0
+          float: left
+
+          .titulo-modulo,
+          .titulo-box-outro
+            background: $rosaClaro
+            padding: 15px 3px 3px
+            margin: 0 0 5px 0
+
+            h3
+              font-size: 32px
+              color: $cinzaTexto
+              text-transform: uppercase
+
+          .medidas-modulo,
+          .medidas-box-outro
+            span
+              font-size: 26px
+              color: $cinzaIcone153
+
+        .opcoes-download
+          margin: 12px 0 0
+          float: left
+
+          .icones-download
+            a
+              .icone
+                width: 27px
+                height: 35px
+                border-radius: 100%
+                margin: 0 4px 0
+                float: left
+
+            a:first-child
+              .icone
+                background: url('../imagens/logotipo-coreldraw.png') no-repeat
+
+            a:last-child
+              .icone
+                background: url('../imagens/logotipo-pdf.png') no-repeat
+
 // ### Sobre nós ###
 .sobre-nos
-  width: 960px
-  margin: 0 auto
-  margin-top: 40px
+  @extend .pagina-padrao
 
   .cabecalho-sobre-nos
     h1
@@ -656,9 +740,7 @@ body
 
 // ### Sobre nós ###
 .anuncie
-  width: 960px
-  margin: 0 auto
-  margin-top: 40px
+  @extend .pagina-padrao
 
   .cabecalho-anuncie
     h1
@@ -793,9 +875,7 @@ body
       display: none
 
 .fale-conosco
-  width: 960px
-  margin: 0 auto
-  margin-top: 40px
+  @extend .pagina-padrao
 
   .conteudo-topo
     margin: -320px 0 0
