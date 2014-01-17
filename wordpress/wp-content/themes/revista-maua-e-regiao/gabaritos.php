@@ -28,10 +28,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -50,10 +50,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -72,10 +72,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -98,10 +98,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -120,10 +120,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -142,10 +142,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
-                <a href="#">
+                <a target="_blank" href="#">
                   <div class="icone"></div>
                 </a>
               </div>
