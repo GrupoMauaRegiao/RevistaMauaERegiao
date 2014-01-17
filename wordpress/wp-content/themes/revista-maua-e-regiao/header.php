@@ -7,7 +7,7 @@
     <meta name="author" content='Grupo Mauá e Região de Comunicação'>
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/imagens/favicon.ico" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/styles/styles.min.css">
-    <title>Revista Mauá e Região</title>
+    <title>Revista Mauá e Região <?php echo definirTitulo(); ?></title>
   </head>
   <body>
     <div class="layout">

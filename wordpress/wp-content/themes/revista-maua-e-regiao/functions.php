@@ -22,4 +22,13 @@ function definirClasseParaPaginas() {
   }
   return $classe;
 }
+
+function definirTitulo() {
+  if(is_page()) {
+    $titulo = "&#8212; " . get_the_title();
+  } elseif (is_category()) {
+    $titulo = "&#8212;  Edição: " . get_post_meta($_GET["id"], "Edição", true);
+  }
+  return $titulo;
+}
 ?>
