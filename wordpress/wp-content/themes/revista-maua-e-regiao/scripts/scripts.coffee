@@ -95,7 +95,6 @@ Revista.apps =
           banner.style.marginTop = '206px'
         if esconder
           conteudo.style.marginTop = '206px'
-        
         cabecalho.setAttribute 'class', 'fase2'
       else
         if faleConosco
