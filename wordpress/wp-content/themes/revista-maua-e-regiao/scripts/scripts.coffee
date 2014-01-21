@@ -83,15 +83,27 @@ Revista.apps =
   efeitoScrollCabecalho: ->
     cabecalho = document.querySelector '.cabecalho'
     banner = document.querySelector '.banner'
+    esconder = document.querySelector '.esconder'
+    conteudo = document.querySelector '.conteudo'
+    faleConosco = document.querySelector '.cabecalho-fale-conosco h1'
 
     _scroll = ->
       if this.pageYOffset > 0
-        if banner
+        if faleConosco
+          faleConosco.style.marginTop = '206px'
+        else if banner
           banner.style.marginTop = '206px'
+        if esconder
+          conteudo.style.marginTop = '206px'
+        
         cabecalho.setAttribute 'class', 'fase2'
       else
-        if banner
+        if faleConosco
+          faleConosco.style.marginTop = '0'
+        else if banner
           banner.style.marginTop = '0'
+        if esconder
+          conteudo.style.marginTop = '0'
         cabecalho.setAttribute 'class', 'cabecalho'
       return
 

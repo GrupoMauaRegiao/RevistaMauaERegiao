@@ -26,7 +26,7 @@
         </div>
 
         <div class="list">
-          <?php query_posts("orderby=asc&posts_per_page=10&category_name=revista"); ?>
+          <?php query_posts("orderby=asc&posts_per_page=100&category_name=revista"); ?>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <a href="<?php bloginfo("url") ?>/categorias/edicao/?id=<?php echo $post -> ID; ?>">
               <div class="revista">
