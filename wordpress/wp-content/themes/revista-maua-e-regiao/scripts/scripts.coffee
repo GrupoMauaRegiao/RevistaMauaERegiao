@@ -86,11 +86,14 @@ Revista.apps =
     esconder = document.querySelector '.esconder'
     conteudo = document.querySelector '.conteudo'
     faleConosco = document.querySelector '.cabecalho-fale-conosco h1'
+    edicao = document.querySelector '.cabecalho-edicao h1'
 
     _scroll = ->
       if this.pageYOffset > 0
         if faleConosco
           faleConosco.style.marginTop = '206px'
+        else if edicao
+          edicao.style.marginTop = '210px'
         else if banner
           banner.style.marginTop = '206px'
         if esconder
@@ -99,6 +102,8 @@ Revista.apps =
       else
         if faleConosco
           faleConosco.style.marginTop = '0'
+        else if edicao
+          edicao.style.marginTop = '0'
         else if banner
           banner.style.marginTop = '0'
         if esconder
