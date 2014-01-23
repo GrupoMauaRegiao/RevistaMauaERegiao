@@ -85,6 +85,7 @@ Revista.apps =
     banner = document.querySelector '.banner'
     esconder = document.querySelector '.esconder'
     conteudo = document.querySelector '.conteudo'
+    resultadoBusca = document.querySelector '.resultado-busca'
     faleConosco = document.querySelector '.cabecalho-fale-conosco h1'
     edicao = document.querySelector '.cabecalho-edicao h1'
 
@@ -94,6 +95,8 @@ Revista.apps =
           faleConosco.style.marginTop = '206px'
         else if edicao
           edicao.style.marginTop = '210px'
+        else if resultadoBusca
+          resultadoBusca.style.marginTop = '200px'
         else if banner
           banner.style.marginTop = '206px'
         if esconder
@@ -104,6 +107,8 @@ Revista.apps =
           faleConosco.style.marginTop = '0'
         else if edicao
           edicao.style.marginTop = '0'
+        else if resultadoBusca
+          resultadoBusca.style.marginTop = '0'
         else if banner
           banner.style.marginTop = '0'
         if esconder

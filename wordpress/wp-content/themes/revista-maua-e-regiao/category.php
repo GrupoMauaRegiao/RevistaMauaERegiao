@@ -84,10 +84,20 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
     <?php endif; ?>
     <div class="secao-relembre">
       <div class="cabecalho-secao-relembre">
-        <h2>Anteriores</h2>
+        <h2>Outras edições</h2>
       </div>
       <div class="revistas">
-        <?php query_posts("orderby=asc&posts_per_page=4&category_name=revista"); ?>
+        <?php $id = $post -> ID; ?>
+        <?php 
+        query_posts(
+            array(
+                "orderby" => "asc",
+                "posts_per_page" => 4,
+                "category_name" => "revista",
+                "post__not_in" => array($id)
+            )
+        ); 
+        ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <a title="Edição <?php echo get_post_meta($post -> ID, "Edição", true); ?>" href="<?php bloginfo("url") ?>/categorias/edicao/?id=<?php echo $post -> ID; ?>">
             <div class="revista">
