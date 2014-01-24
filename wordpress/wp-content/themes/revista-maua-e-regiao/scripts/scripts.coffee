@@ -119,9 +119,11 @@ Revista.apps =
     window.addEventListener 'scroll', _scroll
     return
 
-window.onload = ->
+do ->
   Revista.apps.efeitoScrollCabecalho()
   Revista.apps.filtrarListaEdicoes()
   Revista.apps.controlarBoxEnviarParaAmigo()
   Revista.apps.enviarEmail()
   return
+# window.onload = ->
+#   return
