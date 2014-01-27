@@ -31,6 +31,6 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9vwy72asMQwHF9T4zqK0HP6Q9htHZJZ0&amp;sensor=true"></script>
       <script src="<?php bloginfo('template_url'); ?>/scripts/google.maps.js"></script>
     <?php endif; ?>
-    <script src="<?php bloginfo('template_url'); ?>/scripts/scripts.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/scripts/scripts.min.js"></script>
   </body>
 </html>
