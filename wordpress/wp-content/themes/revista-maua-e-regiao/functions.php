@@ -31,4 +31,8 @@ function definirTitulo() {
   }
   return $titulo;
 }
+
+function UrlAtual() {
+  return "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
+}
 ?>

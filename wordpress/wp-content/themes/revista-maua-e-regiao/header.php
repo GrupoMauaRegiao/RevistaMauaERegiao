@@ -1,7 +1,14 @@
 <!doctype html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
+
+    <meta property="og:url" content="<?php echo UrlAtual(); ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Revista Mauá e Região <?php echo definirTitulo(); ?>" />
+    <meta property="og:description" content="A Revista Mauá e região é um dos nomes mais fortes e respeitados da região. Isso se deve ao trabalho nela investido. Abordando assuntos sérios e de interesse da população de onde ela é entregue, com o objetivo de ser mais que uma revista de fofoca ou que apenas julga, a Revista Mauá e Região busca junto as pessoas soluções para seu município, e vai direto as autoridades buscar resultados." />
+    <meta property="og:image" content="<?php echo get_post_meta($_GET["id"], "Imagem CAPA", true); ?>" />
+
     <meta name="keywords" content="revista maua, maua, sp, maua e regiao, grupo maua e regiao, empresas de mauá, ribeirão pires, revista maua, jornal maua, comprar em maua, comprar em rio grande da serra, comprar em ribeirão pires">
     <meta name="description" content="A Revista Mauá e região é um dos nomes mais fortes e respeitados da região. Isso se deve ao trabalho nela investido. Abordando assuntos sérios e de interesse da população de onde ela é entregue, com o objetivo de ser mais que uma revista de fofoca ou que apenas julga, a Revista Mauá e Região busca junto as pessoas soluções para seu município, e vai direto as autoridades buscar resultados.">
     <meta name="author" content='Grupo Mauá e Região de Comunicação'>

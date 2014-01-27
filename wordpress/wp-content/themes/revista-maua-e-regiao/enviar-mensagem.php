@@ -7,12 +7,10 @@ if (PATH_SEPARATOR == ";") {
 
 if ($_GET["flag"]) {
   $destino = $_GET["e-mail"];
-  $email = "marckfree@gmail.com";
-  // $email = "atendimento@revistamaua.com.br";
+  $email = "atendimento@revistamaua.com.br";
   $assunto = "Revista Mauá e Região: um amigo lhe enviou esta mensagem";
 } else {
-  $destino = "marckfree@gmail.com";
-  // $destino = "atendimento@revistamaua.com.br";
+  $destino = "atendimento@revistamaua.com.br";
   $email = $_GET["e-mail"];
   $assunto = "CONTATO (" . $nome . "): Revista Mauá e Região";
 }

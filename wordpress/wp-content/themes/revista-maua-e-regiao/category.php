@@ -88,7 +88,7 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
       </div>
       <div class="revistas">
         <?php $id = $post -> ID; ?>
-        <?php 
+        <?php
         query_posts(
             array(
                 "orderby" => "asc",
@@ -96,7 +96,7 @@ $linkAtual = "http://" . $_SERVER[HTTP_HOST] . $_SERVER[REQUEST_URI];
                 "category_name" => "revista",
                 "post__not_in" => array($id)
             )
-        ); 
+        );
         ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <a title="Edição <?php echo get_post_meta($post -> ID, "Edição", true); ?>" href="<?php bloginfo("url") ?>/categorias/edicao/?id=<?php echo $post -> ID; ?>">
