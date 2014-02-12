@@ -28,10 +28,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/m1-cdr.cdr">
                   <div class="icone"></div>
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/m1-pdf.pdf">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -50,10 +50,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/m2-cdr.cdr">
                   <div class="icone"></div>
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/m2-pdf.pdf">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -72,10 +72,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/m3-cdr.cdr">
                   <div class="icone"></div>
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/m3-pdf.pdf">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -98,10 +98,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/rodape-cdr.cdr">
                   <div class="icone"></div>
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/rodape-pdf.pdf">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -120,10 +120,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/meia-cdr.cdr">
                   <div class="icone"></div>
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/meia-pdf.pdf">
                   <div class="icone"></div>
                 </a>
               </div>
@@ -142,10 +142,10 @@
 
             <div class="opcoes-download">
               <div class="icones-download">
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/pagint-cdr.cdr">
                   <div class="icone"></div>
                 </a>
-                <a target="_blank" href="#">
+                <a target="_blank" href="http://revistamaua.com.br/wp-content/themes/revista-maua-e-regiao/gabaritos/pagint-pdf.pdf">
                   <div class="icone"></div>
                 </a>
               </div>
