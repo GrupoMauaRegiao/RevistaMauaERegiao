@@ -125,5 +125,3 @@ do ->
   Revista.apps.controlarBoxEnviarParaAmigo()
   Revista.apps.enviarEmail()
   return
-# window.onload = ->
-#   return
