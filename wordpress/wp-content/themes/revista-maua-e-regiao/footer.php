@@ -13,7 +13,7 @@
           </div>
 
           <div class="direitos-autorais">
-            <p>&copy; 2013 Grupo Mauá e Região &#8212; Todos os direitos reservados</p>
+            <p>&copy; <?php echo date(Y); ?> Grupo Mauá e Região &#8212; Todos os direitos reservados</p>
           </div>
         </div>
       </div>
