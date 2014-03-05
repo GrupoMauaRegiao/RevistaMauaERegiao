@@ -5,9 +5,9 @@
         <div class="borda-topo"></div>
         <div class="mensagem">
           <p>
-            Rua Clodoaldo<br>
-            Portugal Caribé, 276<br>
-            Vila Assis Brasil<br>
+            Rua Vitório<br>
+            Veneto, 355<br>
+            Vila Vitória<br>
             Mauá - São Paulo
           </p>
 
