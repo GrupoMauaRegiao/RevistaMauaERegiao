@@ -30,6 +30,10 @@
         <script src="<?php bloginfo('template_url'); ?>/scripts/libs/list.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/scripts/libs/list.pagination.min.js"></script>
 
+    <?php endif;
+    if (is_page("sobre-nos")) :?>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
     <?php
     endif;
     if (is_page("fale-conosco")) :

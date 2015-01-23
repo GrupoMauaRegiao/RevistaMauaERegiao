@@ -23,6 +23,67 @@
                     Buscando sempre o melhor para o leitor e para o anunciante, a equipe é muito bem estruturada em trazer um sonho de revista e a fidelidade de nossos clientes e anunciantes. Agradecemos a todos os nossos parceiros e leitores. Não deixe de ler a edição do mês!
                 </p>
             </div>
+
+            <div class="cabecalho-texto-sobre-nos">
+                <h2>Locais de distribuição</h2>
+            </div>
+
+            <section class="distribuicao-localidades">
+                <section class="local">
+                    <section class="cidade">Mauá</section>
+                    <section class="locais">
+                    <section class="bairros">
+                        Centro, Shopping Mauá Plaza, Jardim Zaira (principais comércios da Av. Presidente Castelo), Av. Barão de Mauá, Av. Itapark, Av. Dom José Gaspar, Av. Rio Branco, Av. Capitão João, Jardim Primavera, Parque das Américas, Parque São Vicente, Jardim Sônia Maria, COOP Barão de Mauá e COOP Ribeirão Pires, Independente F. C., Câmara Municipal, Prefeitura Municipal, SAMA, Fórum e Edifício Comercial City Tower e Zona Industrial ACIBAM e Residências do Jardim Pedroso e Bairro Matriz.
+                    </section>
+
+                    <section class="padarias">
+                        <section class="header-padarias">
+                            Padarias
+                        </section>
+                        <section class="lista">
+                            Arco Íris (Jardim Pedroso), Ki Pão (Vila Bocaina), MG (Vila Assis Brasil), Saint Michel (Vila Bocaina), Sabor e Cia (Vila Vitória), Guarani (Vila Guarani), D. Paula (Jardim Itapark), CBA (Tanque da Paulista), Princesa (Tanque da Paulista)
+                        </section>
+                    </section>
+
+                    <section class="restaurantes-pizzarias">
+                        <section class="header-restaurantes-pizzarias">
+                            Pizzarias e Restaurantes
+                        </section>
+                        <section class="lista">
+                            Gordo e Cia (Vila Bocaina), Querubim (Jardim Pilar), Coma Bem (Sertãozinho), Kabir (Jardim Pilar), Vila Nobre (Vila Assis Brasil), Dragão Brasileiro (Vila Assis), Forninho Kent (Centro), Dom Giovanni (Vila Vitória), Ana Pitanga Zezito, Pizzaria do Alemão (Jardim Pilar), Pizzaria Serena (Vila Guarani), Pizzaria Fornalenha (Vila Assis Brasil).
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="local">
+                <section class="cidade">Ribeirão Pires</section>
+                <section class="locais">
+                    <section class="bairros">
+                        Centro (principais comércios), Shopping Garden, Shopping Center Duaik, Av. Francisco Monteiro (principais comércios), Ouro Fino (principais comércios), Câmara Municipal, Prefeitura Municipal, Fórum, Jardim Itacolomy (residências e comércios), Praça Sabará (residências e comércios).
+                    </section>
+
+                    <section class="padarias">
+                        <section class="header-padarias">
+                            Padarias
+                        </section>
+                        <section class="lista">
+                            Central e Empório dos Pães (centro), Bom Sabor (Santa Luzia), Praiano (Roncon), Colônia (Jardim Alvorada), Maristela (Jardim Maristela).
+                        </section>
+                    </section>
+
+                    <section class="restaurantes-pizzarias">
+                        <section class="header-restaurantes-pizzarias">
+                            Pizzarias e Restaurantes
+                        </section>
+                        <section class="lista">
+                            Canoa Quebrada (centro), Sindicato da Carne (centro), Consulado das Massas (centro), Churrascaria O Carreteiro (Rodovia Índio Tibiriçá), Rei do Abadejo (Rodovia Índio Tibiriça), Rancho do Artur (Ouro Fino), Kassel (Barro Branco), Barretos (centro), Di Roma (centro), Rittorno (centro), Nostra Pizza (centro).
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
         </div>
 
         <div class="icones-destaques">

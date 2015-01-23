@@ -4,6 +4,74 @@
 @import "tipografia.sass"
 @import "cores.sass"
 
+.elemento-aberto
+  background: rgb(255, 102, 0) !important
+
+.elemento-aberto::before
+  content: "\232A"
+  transition-duration: .5s
+  color: darken(rgb(255, 102, 0), 10%) !important
+  transform: rotate(-90deg) !important
+  line-height: 30px !important
+  display: block
+  float: right
+
+.distribuicao-localidades
+  width: 960px
+
+  .header
+    font-size: 40px
+    text-transform: uppercase
+    padding: 30px
+
+  .local
+    margin: 0 auto
+
+    .cidade
+      font-size: 30px
+      background: rgb(51, 204, 51)
+      color: rgb(255, 255, 255)
+      padding: 20px
+      border-bottom: 1px solid rgb(255, 255, 255)
+      cursor: pointer
+      transition-duration: .5s
+      font-family: 'Gotham', Arial, sans-serif
+
+    .cidade:hover
+      background: lighten(rgb(51, 204, 51), 10%)
+
+    .cidade::before
+      content: "\232A"
+      color: lighten(rgb(51, 204, 51), 30%)
+      transform: rotate(90deg)
+      padding: 0 20px
+      transition-duration: .2s
+      line-height: 30px
+      display: block
+      float: right
+
+    .locais
+      display: none
+      font-family: 'Gotham', Arial, sans-serif
+
+      .bairros,
+        padding: 30px 30px 0 30px
+
+      .padarias,
+      .restaurantes-pizzarias
+        padding: 0 30px
+
+      .padarias,
+      .restaurantes-pizzarias
+        .header-padarias,
+        .header-restaurantes-pizzarias
+          font-size: 30px
+          padding: 30px 0
+          color: rgb(77, 77, 77)
+
+      .restaurantes-pizzarias
+        margin-bottom: 30px
+
 body
   background: $cinzaBackground
 

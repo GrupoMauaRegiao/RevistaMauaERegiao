@@ -119,9 +119,37 @@ Revista.apps =
     window.addEventListener 'scroll', _scroll
     return
 
+  controlarExibicaoLocalidade: ->
+    cidades = $ '.local .cidade'
+
+    if cidades[0]
+      locais = $ '.local .locais'
+
+      cidades.on 'click', (evt) ->
+        cidades =  $ '.local .cidade'
+        index = cidades.index this
+        $this = $ this
+
+        locais
+          .stop()
+          .eq(index)
+          .slideToggle()
+
+        $this
+          .toggleClass 'elemento-aberto'
+
+        locais
+          .not(locais.eq(index))
+          .slideUp()
+
+        cidades
+          .not(cidades.eq(index))
+          .removeClass 'elemento-aberto'
+
 do ->
   Revista.apps.efeitoScrollCabecalho()
   Revista.apps.filtrarListaEdicoes()
   Revista.apps.controlarBoxEnviarParaAmigo()
   Revista.apps.enviarEmail()
+  Revista.apps.controlarExibicaoLocalidade()
   return
