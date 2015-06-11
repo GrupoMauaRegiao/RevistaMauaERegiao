@@ -34,7 +34,7 @@
                             <a target="_blank" href="https://twitter.com/tvmauaeregiao" title="Twitter">
                                 <div class="icone"></div>
                             </a>
-                            <a target="_blank" href="https://www.facebook.com/revistamaua" title="Facebook">
+                            <a target="_blank" href="https://www.facebook.com/pages/Portal-Mau%C3%A1-e-Regi%C3%A3o/359211450756546" title="Facebook">
                                 <div class="icone"></div>
                             </a>
                         </div>
